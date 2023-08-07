@@ -263,7 +263,7 @@ main {
 
 /* ================ What are we doing ================ */
 .what-we-do {
-    padding: 120px;
+    padding-bottom: 120px;
 }
 
 .what-we-do .container {
