@@ -1,0 +1,423 @@
+/* ================ VARIABLES ================*/
+:root{
+    --main-color: #FFFFFF;
+    --main-accent-color: #4D5AE5;
+    --accent-ocean-color: #404BBF;
+    --accent-navy-color: #2E2F42;
+    --accent-slate-color: #434455;
+    --accent-cornflower-color: #E7E9FC;
+    --accent-cloud-color: #F4F4FD;
+    --shadow-color: rgba(0, 0, 0, 0.12);
+    --main-font: "Roboto", sans-serif;
+    --accent-font: "Raleway", sans-serif;
+
+}
+/* ================ / VARIABLES ================*/
+
+/* ================ RESET STYLES ================*/
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+/* ================ / RESET STYLES ================*/
+
+/* ================ COMMON STYLES ================*/
+
+
+.container { 
+    max-width: 1158px;
+    padding-left: 15px;  
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body, button, p {
+    font-family: var(--main-font);
+    color: var(--accent-slate-color);
+    background-color: var(--main-color);
+    line-height: 1.5;
+}
+
+.full-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 120px;
+}
+
+/* ================ /COMMON STYLES ================*/
+
+/* ================ COMPONENTS ================*/
+.logotype {
+    display: flex;
+    gap: 1px;
+    font-family: var(--accent-font);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-accent-color);
+}
+.logotype span{
+    color: var(--accent-navy-color);
+}
+
+/* ================ /COMPONENTS ================*/
+
+/* ============= PAGE HEADER ============= */
+.top-header{
+    background-color: var(--accent-cornflower-color);
+}
+.top-header-cont{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    gap: 76px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.menu-points .link {
+    font-weight: 500;
+    color: var(--accent-navy-color);
+}
+
+.menu-points .link:hover, .menu-points link:focus {
+    color: var(--accent-ocean-color);
+    text-decoration: underline;
+}
+
+.address-header .list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-header .adress-link {
+    color: var(--accent-slate-color);
+}
+
+.address-header .adress-link:hover, .address-header .adress-link:focus {
+    color: var(--accent-ocean-color);
+    text-decoration: underline;
+}
+/* ============= PAGE HEADER ============= */
+
+/* ================ HERO ================ */
+
+.hero {
+    max-width: 1440px;
+    padding-left: 0;  
+    padding-right: 0;
+    margin-left: 0;
+    margin-right:  0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    background-color: var(--accent-navy-color);
+    color: var(--main-color);
+}
+
+.hero .header-f {
+    max-width: 496px;
+    text-transform: capitalize;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    color: var(--main-color);
+}
+.hero .cta {
+    flex-basis: auto;
+    min-width: 169px;
+    min-height: 56px;
+    border-radius: 4px;
+    padding: 0;
+    border: 0;
+    background-color: var(--main-accent-color);
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.hero button:hover, .hero button:focus {
+    background-color: var(--accent-ocean-color);
+}
+
+/* ================ / HERO ================ */
+
+/* ================ BENEFITS ================ */
+
+.benefits .list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.benefits .list-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.benefits .header-sec {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color)
+    
+}
+
+.benefits .header-third {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color)
+}
+
+.benefits .paragraph {
+    color: var(--accent-slate-color);
+    text-align: center;
+    max-width: 264px;
+}
+
+/* ================ / BENEFITS ================ */
+
+/* ================ What are we doing ================ */
+.what-we-do .container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.what-we-do .header-sec {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color)
+    
+}
+
+.what-we-do .list {
+    display: flex;
+    gap: 24px;
+}
+/* ================ / What are we doing ================ */
+
+/* ================ OUR TEAM ================ */
+.our-team {
+    margin-bottom: 120px;
+}
+
+.our-team .container {
+    background-color: var(--accent-cloud-color);
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.our-team .list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-team .list .points {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.our-team .header-sec {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color)
+    
+}
+
+.our-team .header-third {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color)
+}
+
+.our-team .paragraph {
+    color: var(--accent-slate-color);
+    text-align: center;
+    margin-bottom: 32px;
+}
+/* ================ / OUR TEAM ================ */
+
+/* ================ PORTFOLIO ================ */
+.portfolio .button-list {
+    margin-top: 96px;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.portfolio .portfolio-button {
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 4px;
+    color: var(--main-accent-color);
+    background-color: var(--accent-cloud-color);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.portfolio .portfolio-button:hover, .portfolio .portfolio-button:focus {
+    color: var(--main-color);
+    background-color: var(--accent-ocean-color);
+}
+
+.portfolio .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    gap: 24px;
+}
+
+.portfolio .card-list:last-child {
+    margin-bottom: 120px;
+}
+
+.portfolio .header-sec {
+    margin-top: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color);
+}
+
+.portfolio .paragraph {
+    color: var(--accent-slate-color);
+    margin-bottom: 32px;
+}
+
+
+
+/* ================ / PORTFOLIO ================ */
+
+/* ================ FOOTER ================ */
+footer, p {
+    background-color: var(--accent-navy-color);
+    color: var(--accent-cloud-color);
+}
+
+.down-footer .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    
+}
+
+.down-footer .paragraph {
+    max-width: 264px;
+}
+
+footer .accent {
+    color: var(--accent-cloud-color)
+}
+
+/* ================ / FOOTER ================ */
+
+
+
+
+
+
+
