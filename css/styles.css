@@ -141,7 +141,6 @@ main {
 .menu{
     display: flex;
     gap: 40px;
-    color: var(--accent-ocean-color); 
 }
 
 .menu-points .link {
@@ -465,7 +464,7 @@ main {
      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list .link:hover, .customers-list .link:hover {
+.customers-list .link:hover, .customers-list .link:focus {
     color: var(--accent-ocean-color);
     border-color: var(--accent-ocean-color);
 }
@@ -557,9 +556,11 @@ main {
     line-height: 1.5;
     letter-spacing: 0.02em;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
-.img-p-wrapper:hover .overlay-text, .img-p-wrapper:focus .overlay-text {
+.img-p-wrapper:hover .overlay-text, 
+.img-p-wrapper:focus .overlay-text {
     transform: translateY(0);
 }
 
@@ -635,7 +636,7 @@ footer .accent {
 }
 
 .down-footer .icon-social {
-    fill: var(--main-color);
+    fill: var(--accent-cloud-color);
 }
 
 .down-footer .social-icons-links:hover, .down-footer .social-icons-links:focus {
@@ -699,12 +700,10 @@ footer .accent {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--accent-cornflower-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .icon-close {
@@ -715,10 +714,9 @@ footer .accent {
 .modal .close-button:hover, .modal .close-button:focus {
     border: none;
     background-color: var(--accent-ocean-color);
-    fill: var(--accent-cloud-color);
 }
 
-.modal .icon-close:hover, .modal .icon-close:focus {
+.close-button:hover .icon-close, .close-button:focus .icon-close{
     fill: var(--accent-cloud-color);
 }
 /* ================ / MODAL ================ */
