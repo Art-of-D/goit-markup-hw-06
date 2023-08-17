@@ -157,7 +157,11 @@ main {
     color: var(--accent-ocean-color);
 }
 
-.menu-points .link:hover::after, .menu-points .link:focus::after {
+.menu-points .index-link {
+    color: var(--accent-ocean-color);
+}
+
+.menu-points .index-link::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -477,6 +481,26 @@ main {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+
+.top-header .portfolio-link {
+    color: var(--accent-ocean-color);
+}
+
+.top-header .portfolio-link::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: var(--accent-ocean-color);
+    content:'';
+    border-radius: 2px;
+}
+
 .portfolio .button-list {
     margin-bottom: 72px;
     display: flex;
@@ -559,8 +583,7 @@ main {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
-.img-p-wrapper:hover .overlay-text, 
-.img-p-wrapper:focus .overlay-text {
+.img-p-wrapper:focus .overlay-text, .img-p-wrapper:hover .overlay-text {
     transform: translateY(0);
 }
 
@@ -717,7 +740,7 @@ footer .accent {
 }
 
 .close-button:hover .icon-close, .close-button:focus .icon-close{
-    fill: var(--accent-cloud-color);
+    fill: var(--main-color);
 }
 /* ================ / MODAL ================ */
 
