@@ -7,7 +7,11 @@
     --accent-slate-color: #434455;
     --accent-cornflower-color: #E7E9FC;
     --accent-cloud-color: #F4F4FD;
-    --shadow-color: rgba(0, 0, 0, 0.12);
+    --accent-dairy-color: #FCFCFC;
+    --accent-lgslate-color: #8E8F99;
+    --accent-green-color: #31D0AA;
+    --shadow-effect-color: rgba(46, 47, 66, 0.7);
+    --modal-effect-color: rgba(46, 47, 66, 0.4);
     --main-font: "Roboto", sans-serif;
     --accent-font: "Raleway", sans-serif;
 
@@ -97,6 +101,7 @@ main {
 
 /* ================ COMPONENTS ================*/
 .logotype {
+    position: relative;
     margin-right: 76px;
     display: flex;
     gap: 1px;
@@ -118,16 +123,17 @@ main {
 /* ============= PAGE HEADER ============= */
 .top-header{
     border-bottom: 1px solid var(--accent-cornflower-color);
+    max-height: 72px;
 }
 .top-header-cont{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .nav-header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .menu{
@@ -141,11 +147,24 @@ main {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-points .link:hover, .menu-points link:focus {
     color: var(--accent-ocean-color);
 }
+
+.menu-points .link:hover::after, .menu-points link:focus::after {
+    display: block;
+    height: 4px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    background-color: var(--accent-ocean-color);
+    content:"";
+    border-radius: 4px;
+}
+
 
 .address-header .list {
     display: flex;
@@ -154,6 +173,7 @@ main {
 
 .address-header .adress-link {
     color: var(--accent-slate-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-header .adress-link:hover, .address-header .adress-link:focus {
@@ -165,6 +185,10 @@ main {
 .hero {
     padding: 188px 0;
     background-color: var(--accent-navy-color);
+    background-image:linear-gradient(var(--shadow-effect-color), 
+    var(--shadow-effect-color)), url(/images/hero-page/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero .container {
@@ -201,6 +225,7 @@ main {
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:hover, .hero button:focus {
@@ -225,6 +250,17 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: calc((100% - 72px) / 4);
+}
+
+.benefits .icon-bg {
+    display: flex;
+    background-color: var(--accent-cloud-color);
+    height: 112px;
+    border-radius: 4px;
+}
+
+.benefits .icon-benefits {
+    margin: auto;
 }
 
 .benefits .header-sec {
@@ -298,12 +334,15 @@ main {
     gap: 24px;
 }
 
-.our-team .list .points {
+.our-team .points {
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.16), 
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08);
 }
 
 .our-team .employee {
@@ -337,7 +376,76 @@ main {
     color: var(--accent-slate-color);
     text-align: center;
 }
+
+.our-team .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-team .social-icon-bg { 
+    display: flex;
+    background-color: var(--main-accent-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team .icon-social {
+    margin: auto;
+    fill: var(--accent-cloud-color);
+}
+
+.our-team .social-icon-bg:hover, .our-team .social-icon-bg:focus {
+    background-color: var(--accent-ocean-color);
+}
 /* ================ / OUR TEAM ================ */
+
+/* ================ CUSTOMERS ================ */
+.customers {
+    padding: 120px 0;
+}
+
+.customers .header-sec {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-navy-color);
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers-list .icon-customers-bg {
+    display: flex;
+    border: 1px solid var(--accent-lgslate-color);
+    height: 88px;
+    width: 168px;
+    border-radius: 4px;
+}
+
+.customers-list .icon-customers {
+    margin: auto;
+    fill: var(--accent-lgslate-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list .icon-customers:hover, .customers-list .icon-customers-bg:hover, 
+.customers-list .icon-customers:focus, .customers-list .icon-customers-bg:focus{
+    fill: var(--main-accent-color);
+    border-color: var(--main-accent-color);
+}
+
+/* ================ / CUSTOMERS  ================ */
+
 
 /* ================ PORTFOLIO ================ */
 .portfolio {
@@ -359,12 +467,16 @@ main {
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .portfolio-button:hover, .portfolio .portfolio-button:focus {
     color: var(--main-color);
     background-color: var(--accent-ocean-color);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .card-list {
@@ -377,7 +489,7 @@ main {
 .portfolio .works {
     padding: 32px 16px;
     border: 1px solid var(--accent-cornflower-color);
-    border-top: none; 
+    border-top: none;
 }
 
 .portfolio .header-sec {
@@ -394,7 +506,28 @@ main {
     color: var(--accent-slate-color);
 }
 
+.img-p-wrapper {
+    position: relative;
+    overflow: hidden;
+}
 
+.img-p-wrapper .overlay-text {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px 0 32px;
+    background-color: var(--main-accent-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transform: translateY(100%);
+}
+
+.img-p-wrapper:hover .overlay-text {
+    transform: translateY(0);
+}
 
 /* ================ / PORTFOLIO ================ */
 
@@ -402,10 +535,16 @@ main {
 footer, p {
     color: var(--accent-cloud-color);
 }
+
 .down-footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--accent-navy-color);
+}
+
+.down-footer .container {
+    display: flex;
+    gap: 120px;
 }
 
 .down-footer .link {
@@ -421,7 +560,96 @@ footer .accent {
     color: var(--accent-cloud-color)
 }
 
+.down-footer .header-sec {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.down-footer .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.down-footer .social-icon-bg { 
+    display: flex;
+    background-color: var(--main-accent-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.down-footer .icon-social {
+    margin: auto;
+    fill: var(--accent-cloud-color)
+    
+}
+
+.down-footer .social-icon-bg:hover, .down-footer .social-icon-bg:focus {
+    background-color: var(--accent-green-color);
+}
 /* ================ / FOOTER ================ */
+
+/* ================ BACKDROP ================ */
+.backdrop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-effect-color);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* ================ / BACKDROP ================ */
+
+/* ================ MODAL ================ */
+.modal {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 408px;
+    height: 584px;
+    background-color: var(--accent-dairy-color);
+}
+
+.modal .close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 24;
+    line-height: 0;
+    border-radius: 4;
+}
+
+.modal .button-bg {
+    display: flex;
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    background-color: var(--accent-cornflower-color);
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.modal .icon-close {
+    margin: auto;
+    fill: var(--accent-navy-color);
+}
+
+/* ================ / MODAL ================ */
 
 
 
