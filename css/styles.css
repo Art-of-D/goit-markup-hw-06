@@ -663,6 +663,7 @@ footer .accent {
     padding: 8px 16px;
     font-size: 12px;
     letter-spacing: 0.04em;
+    line-height: 1.5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--main-color);
     outline: transparent;
@@ -879,7 +880,7 @@ footer .accent {
     border: 1px solid var(--modal-effect-color);
     outline: transparent;
     outline-offset: 2px;
-    color: var(--accent-lgslate-color);
+    color: var(--modal-effect-color);
     background-color: transparent;
     font-size: 12px;
     line-height: 1.17;
