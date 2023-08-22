@@ -559,7 +559,6 @@ main {
     padding: 40px 32px;
     background-color: var(--main-accent-color);
     font-size: 16px;
-    line-height: 1.5;
     letter-spacing: 0.02em;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
@@ -615,7 +614,6 @@ footer .accent {
     color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
@@ -657,12 +655,18 @@ footer .accent {
     gap: 24px;
 }
 .footer-form .subcribe-email {
-    background-color: var(--accent-navy-color);
+    background-color: transparent;
     border: 1px solid var(--main-color);
     border-radius: 4px;
     min-width: 264px;
     height: 40px;
     padding: 8px 16px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--main-color);
+    outline: transparent;
+    outline-offset: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -670,11 +674,15 @@ footer .accent {
 .footer-form .subcribe-email:focus {
     background-color: var(--accent-dairy-color);
     border-color: var(--main-accent-color);
-    outline-color: transparent;
-    outline-offset: 2px;
+    color: var(--accent-navy-color);
+}
+
+.footer-form .subcribe-email:focus::placeholder {
+    color: var(--accent-navy-color);
 }
 
 .subcribe-email::placeholder {
+    color: var(--main-color);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -683,7 +691,6 @@ footer .accent {
 .subcribe-field .subcribe-button {
     display: flex;
     flex-basis: auto;
-    gap: 16px;
     border-bottom: 1px solid var(--accent-cornflower-color);
     border: none;
     min-width: 165px;
@@ -692,6 +699,8 @@ footer .accent {
     padding: 8px 24px;
     background-color: var(--main-accent-color);
     color: var(--main-color);
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -703,6 +712,7 @@ footer .accent {
 }
 
 .subcribe-button .subscribe-icon {
+    margin-left: 16px;
     fill: var(--main-color);
 }
 
@@ -785,17 +795,34 @@ footer .accent {
     fill: var(--main-color);
 }
 
+.modal .modal-paragraph {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--accent-navy-color);
+}
+
+.modal-form .modal-label {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--accent-lgslate-color);
+}
+
 .modal-form .modal-input-txt {
     width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--modal-effect-color);
+    background-color: transparent;
+    outline: transparent;
+    outline-offset: 2px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-form .modal-input-wrapper {
-    display: block;
     position: relative;
 }
 
@@ -805,6 +832,7 @@ footer .accent {
     left: 16px;
     transform: translateY(-50%);
     fill: var(--accent-navy-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrapper .body-icon {
@@ -821,8 +849,6 @@ footer .accent {
 
 .modal-form .modal-input-txt:focus {
     border-color: var(--main-accent-color);
-    outline-offset: 2px;
-    outline-color: transparent;
 }
 
 .modal-input-txt:focus + .modal-icons {
@@ -836,6 +862,8 @@ footer .accent {
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--modal-effect-color);
+    outline: transparent;
+    outline-offset: 2px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -848,22 +876,20 @@ footer .accent {
 
 .modal-textarea:focus {
     border-color: var(--main-accent-color);
-    outline-offset: 2px;
-    outline-color: transparent;
+    
 }
 
-.modal-form .modal-paragraph {
-    margin-bottom: 16px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--accent-navy-color);
+.modal-form .input-wrapper {
+    margin-bottom: 8px;
 }
 
-.modal-label .modal-paragraph {
+.modal-form .input-wrapper-agreement{
+    margin-bottom: 24px;
+}
+
+.modal-form .modal-label-checkbox {
+    margin-top: 16px;
     display: block;
-    margin-top: 8px;
     margin-bottom: 4px;
     color: var(--accent-lgslate-color);
     font-size: 12px;
@@ -871,32 +897,25 @@ footer .accent {
     letter-spacing: 0.04em;
 }
 
-.modal-form .modal-label-checkbox {
-    margin-top: 16px;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    
-}
-
-input.checkbox-agreement {
-    position: absolute;
-    appearance: none;
-}
-
-.modal-label-checkbox .icon-click-modal {
+.modal-label-checkbox .icon-click-modal-wrapper {
     cursor: pointer;
     fill: transparent;
     border: 1px solid var(--modal-effect-color);
     border-radius: 2px;
-    margin-right: 8px;
     padding: 4px 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input.checkbox-agreement:checked + .icon-click-modal {
-    fill: var(--accent-cloud-color);
-    border: 0;
+input.checkbox-agreement:checked + .modal-label-checkbox .icon-click-modal-wrapper {
     background-color: var(--accent-ocean-color);
+    fill: var(--accent-cloud-color);
+    border-color: none;
 }
 
 .modal-checkbox-paragraph {
@@ -910,12 +929,10 @@ input.checkbox-agreement:checked + .icon-click-modal {
     top: 24px;
     left: 25%;
     transform: translateY(-24px);
-    flex-basis: auto;
-    border-bottom: 1px solid var(--accent-cornflower-color);
     border: none;
+    border-radius: 4px;
     min-width: 169px;
     height: 56px;
-    border-radius: 4px;
     padding: 0;
     background-color: var(--main-accent-color);
     color: var(--main-color);
