@@ -684,7 +684,7 @@ footer .accent {
 .subcribe-email::placeholder {
     color: var(--main-color);
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
@@ -805,9 +805,20 @@ footer .accent {
 }
 
 .modal-form .modal-label {
+    display: block; 
+    margin-bottom: 4px;
     font-size: 12px;
     letter-spacing: 0.04em;
+    line-height: 1.17;
     color: var(--accent-lgslate-color);
+}
+
+.modal-form .input-wrapper {
+    margin-bottom: 8px;
+}
+
+.modal-form .last-input-wrapper {
+    margin-bottom: 16px;
 }
 
 .modal-form .modal-input-txt {
@@ -819,6 +830,10 @@ footer .accent {
     outline: transparent;
     outline-offset: 2px;
     padding-left: 38px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    color: var(--accent-lgslate-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -835,15 +850,15 @@ footer .accent {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-wrapper .body-icon {
+.modal-input-wrapper #body-icon {
     padding: 6px 3px;
 }
 
-.modal-input-wrapper .phone-icon {
+.modal-input-wrapper #phone-icon {
     padding: 5px 3px 6px 2px;
 }
 
-.modal-input-wrapper .mail-icon {
+.modal-input-wrapper #mail-icon {
     padding: 6px 1.5px;
 }
 
@@ -864,23 +879,18 @@ footer .accent {
     border: 1px solid var(--modal-effect-color);
     outline: transparent;
     outline-offset: 2px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.modal-textarea::placeholder {
     color: var(--accent-lgslate-color);
+    background-color: transparent;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 
 .modal-textarea:focus {
     border-color: var(--main-accent-color);
     
-}
-
-.modal-form .input-wrapper {
-    margin-bottom: 8px;
 }
 
 .modal-form .input-wrapper-agreement{
@@ -888,7 +898,6 @@ footer .accent {
 }
 
 .modal-form .modal-label-checkbox {
-    margin-top: 16px;
     display: block;
     margin-bottom: 4px;
     color: var(--accent-lgslate-color);
@@ -898,6 +907,8 @@ footer .accent {
 }
 
 .modal-label-checkbox .icon-click-modal-wrapper {
+    width: 16px;
+    height: 16px;
     cursor: pointer;
     fill: transparent;
     border: 1px solid var(--modal-effect-color);
@@ -915,17 +926,16 @@ footer .accent {
 input.checkbox-agreement:checked + .modal-label-checkbox .icon-click-modal-wrapper {
     background-color: var(--accent-ocean-color);
     fill: var(--accent-cloud-color);
-    border-color: none;
+    border: none;
 }
 
-.modal-checkbox-paragraph {
-    color: var(--accent-lgslate-color);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+.modal-label-checkbox .link {
+    color: var(--main-accent-color);
 }
+
 .modal-form .send-button {
     position: relative;
+    display: block;
     top: 24px;
     left: 25%;
     transform: translateY(-24px);
