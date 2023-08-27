@@ -1,0 +1,274 @@
+
+@media screen and (max-width: 767px) {
+    .our-team {
+        padding: 96px 0;
+        background-color: var(--accent-cloud-color);
+    }
+
+    .our-team .header-sec {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color);
+        margin-bottom: 72px;
+        
+    }
+
+    .our-team .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 72px;
+    }
+
+    .our-team .points {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        
+    }
+
+    .our-team .employee {
+        padding: 32px 0;
+    }
+
+    .our-team .header-third {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color)
+    }
+
+    .our-team .paragraph {
+        color: var(--accent-slate-color);
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .our-team .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        
+    }
+    .our-team .list-points {
+        height: 40px;
+        width: 40px;  
+    }
+
+    .our-team .link {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-accent-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .our-team .icon-social {
+        margin: auto;
+        fill: var(--accent-cloud-color);
+    }
+
+    .our-team .link:hover, .our-team .link:focus {
+        background-color: var(--accent-ocean-color);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1157px) {
+    .our-team {
+        padding: 96px 0;
+        background-color: var(--accent-cloud-color);
+    }
+
+    .our-team .header-sec {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color);
+        margin-bottom: 72px;
+        
+    }
+
+    .our-team .list {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 552px;
+        gap: 24px;
+    }
+
+    .our-team .points {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        
+    }
+
+    .our-team .employee {
+        padding: 32px 0;
+    }
+
+    .our-team .header-third {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color)
+    }
+
+    .our-team .paragraph {
+        color: var(--accent-slate-color);
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .our-team .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        
+    }
+    .our-team .list-points {
+        height: 40px;
+        width: 40px;  
+    }
+
+    .our-team .link {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-accent-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .our-team .icon-social {
+        margin: auto;
+        fill: var(--accent-cloud-color);
+    }
+
+    .our-team .link:hover, .our-team .link:focus {
+        background-color: var(--accent-ocean-color);
+    }
+
+}
+
+@media screen and (min-width:1158px) {
+    .our-team {
+        padding: 120px 0;
+        background-color: var(--accent-cloud-color);
+    }
+
+    .our-team .header-sec {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color);
+        margin-bottom: 72px;
+        
+    }
+
+    .our-team .list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .our-team .points {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        
+    }
+
+    .our-team .employee {
+        padding: 32px 0;
+    }
+
+    .our-team .header-third {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color)
+    }
+
+    .our-team .paragraph {
+        color: var(--accent-slate-color);
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .our-team .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        
+    }
+    .our-team .list-points {
+        height: 40px;
+        width: 40px;  
+    }
+
+    .our-team .link {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-accent-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .our-team .icon-social {
+        margin: auto;
+        fill: var(--accent-cloud-color);
+    }
+
+    .our-team .link:hover, .our-team .link:focus {
+        background-color: var(--accent-ocean-color);
+    }
+}

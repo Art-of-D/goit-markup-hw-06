@@ -1,0 +1,16 @@
+:root{
+    --main-color: #FFFFFF;
+    --main-accent-color: #4D5AE5;
+    --accent-ocean-color: #404BBF;
+    --accent-navy-color: #2E2F42;
+    --accent-slate-color: #434455;
+    --accent-cornflower-color: #E7E9FC;
+    --accent-cloud-color: #F4F4FD;
+    --accent-dairy-color: #FCFCFC;
+    --accent-lgslate-color: #8E8F99;
+    --accent-green-color: #31D0AA;
+    --shadow-effect-color: rgba(46, 47, 66, 0.7);
+    --modal-effect-color: rgba(46, 47, 66, 0.4);
+    --main-font: "Roboto", sans-serif;
+    --accent-font: "Raleway", sans-serif;
+}

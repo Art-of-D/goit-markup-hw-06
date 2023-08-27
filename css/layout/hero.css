@@ -1,0 +1,201 @@
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 188px 0;
+        background-color: var(--accent-navy-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1440px;
+        margin-left: 0;
+        margin-right:  0;
+        background-position: center;
+    }
+    
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        color: var(--main-color);
+    }
+    
+    .hero .header-f {
+        max-width: 320px;
+        text-transform: capitalize;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing:  0.02em;
+        font-weight: 700;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .hero .cta {
+        border-bottom: 1px solid var(--accent-cornflower-color);
+        border: none;
+        flex-basis: auto;
+        min-width: 169px;
+        height: 56px;
+        border-radius: 4px;
+        padding: 0;
+        background-color: var(--main-accent-color);
+        color: var(--main-color);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .hero button:hover, .hero button:focus {
+        background-color: var(--accent-ocean-color);
+    }
+}
+
+@media screen and (max-resolution: 191dpi) and (max-width: 767px) {
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-mobile.jpg);
+    }
+    
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-mobile-2x.jpg);
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:1157px) {
+    .hero {
+        padding: 188px 0;
+        background-color: var(--accent-navy-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1440px;
+        margin-left: 0;
+        margin-right:  0;
+        background-position: center;
+    }
+    
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        color: var(--main-color);
+    }
+    
+    .hero .header-f {
+        max-width: 496px;
+        text-transform: capitalize;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .hero .cta {
+        border-bottom: 1px solid var(--accent-cornflower-color);
+        border: none;
+        flex-basis: auto;
+        min-width: 169px;
+        height: 56px;
+        border-radius: 4px;
+        padding: 0;
+        background-color: var(--main-accent-color);
+        color: var(--main-color);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .hero button:hover, .hero button:focus {
+        background-color: var(--accent-ocean-color);
+    }
+}
+
+@media screen and (max-resolution: 191dpi) and (min-width: 768px) and (max-width:1157px) {
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-tablet.jpg);
+    }
+    
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width:1157px){
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-tablet-2x.jpg);
+    }
+    
+}
+
+@media screen and (min-width:1158px) {
+    .hero {
+        padding: 188px 0;
+        background-color: var(--accent-navy-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1440px;
+        margin-left: 0;
+        margin-right:  0;
+        background-position: center;
+    }
+    
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        color: var(--main-color);
+    }
+    
+    .hero .header-f {
+        max-width: 496px;
+        text-transform: capitalize;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .hero .cta {
+        border-bottom: 1px solid var(--accent-cornflower-color);
+        border: none;
+        flex-basis: auto;
+        min-width: 169px;
+        height: 56px;
+        border-radius: 4px;
+        padding: 0;
+        background-color: var(--main-accent-color);
+        color: var(--main-color);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .hero button:hover, .hero button:focus {
+        background-color: var(--accent-ocean-color);
+    }
+}
+
+@media screen and (max-resolution: 191dpi) and (min-width:1158px){
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office.jpg);
+    }
+    
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width:1158px) {
+    .hero {
+        background-image:linear-gradient(var(--shadow-effect-color), 
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-2x.jpg);
+    }
+    
+}

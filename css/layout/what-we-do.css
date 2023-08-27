@@ -1,0 +1,43 @@
+@media screen and (max-width: 767px) {
+    .what-we-do {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1157px) {
+    .what-we-do {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .what-we-do {
+        padding-bottom: 120px;
+    }
+
+    .what-we-do .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what-we-do .header-sec {
+        margin-bottom: 72px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--accent-navy-color)
+        
+    }
+
+    .what-we-do .list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .what-we-do .list-points {
+        width: calc((100% - 48px) / 3);
+    }
+}

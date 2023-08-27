@@ -1,0 +1,17 @@
+body, button, p {
+    font-family: var(--main-font);
+    color: var(--accent-slate-color);
+    line-height: 1.5;
+}
+
+.full-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

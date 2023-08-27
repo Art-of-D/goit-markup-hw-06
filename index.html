@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>WebStudio - effective solutions for your business</title>
   </head>
 
@@ -22,6 +22,14 @@
       <div class="container top-header-cont">
         <nav class="nav-header">
           <a href="./index.html" class="logotype link"> Web<span class="accent">Studio</span> </a>
+          <button type="button" class="burger-menu js-open-menu">
+              <svg class="icon-burger-menu"
+              width="32"
+              height="22"
+              aria-label="burger menu icon">
+                <use href="/images/icons.svg#icon-menu-hamburger"></use>
+              </svg>
+          </button>
           <ul class="list menu">
             <li class="menu-points"><a href="./index.html" class="link current">Studio</a></li>
             <li class="menu-points"><a href="./portfolio.html" class="link">Portfolio</a></li>
@@ -38,13 +46,13 @@
     </header>
 
     <main>
-      <!--hero screen-->
+      <!-- hero screen-->
       <section class="hero">
         <div class="container">
           <h1 class="header-f">Effective Solutions for Your Business</h1>
           <button type="button" class="cta" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> 
 
       <!-- Benefits-->
       <section class="benefits">
@@ -122,6 +130,8 @@
             <ul class="list">
               <li class="list-points">
                 <img
+                  srcset="./images/what-we-do/img-1.jpg 1x,
+                  ./images/what-we-do/img-1@2x.jpg 2x"
                   src="./images/what-we-do/img-1.jpg"
                 alt="App on monitor"
                 height="300"
@@ -130,6 +140,8 @@
             </li>
             <li class="list-points">
               <img
+                srcset="./images/what-we-do/img-2.jpg 1x,
+                  ./images/what-we-do/img-2@2x.jpg 2x"
                 src="./images/what-we-do/img-2.jpg"
                 alt="Messenger on phone"
                 height="300"
@@ -138,6 +150,8 @@
             </li>
             <li class="list-points">
               <img
+                srcset="./images/what-we-do/img-3.jpg 1x,
+                  ./images/what-we-do/img-3@2x.jpg 2x"
                 src="./images/what-we-do/img-3.jpg"
                 alt="App on phone"
                 height="300"
@@ -155,6 +169,8 @@
           <ul class="list">
             <li class="points">
               <img
+                srcset="./images/studio/mark-guerrero.jpg 1x, 
+                ./images/studio/mark-guerrero@2x.jpg 2x"
                 src="./images/studio/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 height="260"
@@ -209,6 +225,8 @@
             </li>
             <li class="points">
               <img
+                srcset="./images/studio/tom-ford.jpg 1x, 
+                ./images/studio/tom-ford@2x.jpg 2x"
                 src="./images/studio/tom-ford.jpg"
                 alt="Tom Ford"
                 height="260"
@@ -263,6 +281,8 @@
             </li>
             <li class="points">
               <img
+                srcset="./images/studio/camila-garcia.jpg 1x,
+                ./images/studio/camila-garcia@2x.jpg 2x"
                 src="./images/studio/camila-garcia.jpg"
                 alt="Camila Garcia"
                 height="260"
@@ -317,6 +337,8 @@
             </li >
             <li class="points">
               <img
+                srcset="./images/studio/daniel-wilson.jpg 1x,
+                ./images/studio/daniel-wilson@2x.jpg 2x"
                 src="./images/studio/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 height="260"
@@ -381,8 +403,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers"
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-yaco"></use>
                   </svg>
@@ -391,8 +411,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers"
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-company-tag"></use>
                   </svg>
@@ -401,8 +419,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers"
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-company"></use>
                   </svg>
@@ -411,8 +427,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers"
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-brand"></use>
                   </svg>
@@ -421,8 +435,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers"
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-fosters-p"></use>
                   </svg>
@@ -431,8 +443,6 @@
             <li class="list-points">
               <a href="" class="link">
                   <svg class="icon-customers" 
-                  height="56"
-                  width="104"
                   aria-label="customers icon">
                     <use href="./images/icons.svg#icon-logo-company-tag-line"></use>
                   </svg>
@@ -497,13 +507,13 @@
             </li>
           </ul>
         </div>
-        <div class="subcribe-field">
+        <div class="subscribe-field">
           <p class="social-header">Subscribe</p>
           <form class="footer-form">
-            <label class="subcribe-label">
-              <input class="subcribe-email" type="email" name="email" placeholder="E-mail" required >
+            <label class="subscribe-label">
+              <input class="subscribe-email" type="email" name="email" placeholder="E-mail" required >
             </label>
-            <button class="subcribe-button" type="submit" name="subcribe-button">
+            <button class="subscribe-button" type="submit" name="subscribe-button">
               Subscribe
               <svg class="subscribe-icon"
                   width="24"
@@ -517,9 +527,81 @@
       </div>
     </footer>
 
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu-wrapper">
+        <button class="header-close-button js-close-menu" type="button"> 
+          <svg class="icon-close"
+          width="8"
+          height="8"
+          aria-label="close icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-internal">
+          <nav class="mobile-nav-header">
+            <ul class="list mobile-menu-list">
+              <li class="mobile-menu-points"><a href="./index.html" class="link current">Studio</a></li>
+              <li class="mobile-menu-points"><a href="./portfolio.html" class="link">Portfolio</a></li>
+              <li class="mobile-menu-points"><a href="" class="link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-address-menu">
+            <ul class="list">
+                <li><a href="tel:+110001111111" class="link adress-link phone-link">+11 (000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="link adress-link">info@devstudio.com</a></li>
+            </ul> 
+          </address>
+        </div>
+         <ul class="menu-social-list">
+          <li class="list-points">
+            <a href="" class="link">
+                <svg class="icon-social"
+                width="16"
+                height="16"
+                aria-label="icon instagram">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+            </a>
+          </li>
+          <li class="list-points">
+            <a href="" class="link">
+                <svg class="icon-social"
+                width="16"
+                height="16"
+                aria-label="icon instagram">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+            </a>
+          </li>
+          <li class="list-points">
+            <a href="" class="link">
+                <svg class="icon-social"
+                width="16"
+                height="16"
+                aria-label="icon instagram">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+            </a>
+          </li>
+          <li class="list-points">
+            <a href="" class="link">
+                <svg class="icon-social"
+                width="16"
+                height="16"
+                aria-label="icon instagram">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+            </a>
+          </li>
+        </ul>
+     </div>
+    </div>
+
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-          <button class="close-button" type="button"  data-modal-close> 
+          <button class="close-button" type="button" data-modal-close> 
               <svg class="icon-close"
               width="8"
               height="8"
@@ -615,6 +697,17 @@
           </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    
+    <!-- MOBILE MENU SCRIPT -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+     <!-- MODAL SCRIPT -->
+    <script src="/js/modal.js"></script>
   </body>
 </html>
