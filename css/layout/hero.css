@@ -53,7 +53,7 @@
 @media screen and (max-resolution: 191dpi) and (max-width: 767px) {
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office-mobile.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-mobile.jpg);
     }
     
 }
@@ -61,7 +61,7 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office-mobile-2x.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-mobile@2x.jpg);
     }
     
 }
@@ -120,7 +120,7 @@
 @media screen and (max-resolution: 191dpi) and (min-width: 768px) and (max-width:1157px) {
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office-tablet.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-tablet.jpg);
     }
     
 }
@@ -128,7 +128,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width:1157px){
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office-tablet-2x.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office-tablet@2x.jpg);
     }
     
 }
@@ -187,7 +187,7 @@
 @media screen and (max-resolution: 191dpi) and (min-width:1158px){
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office.jpg);
     }
     
 }
@@ -195,7 +195,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width:1158px) {
     .hero {
         background-image:linear-gradient(var(--shadow-effect-color), 
-        var(--shadow-effect-color)), url(../images/hero-page/people-office-2x.jpg);
+        var(--shadow-effect-color)), url(/images/hero-page/people-office@2x.jpg);
     }
     
 }
