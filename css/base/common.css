@@ -2,6 +2,7 @@ body, button, p {
     font-family: var(--main-font);
     color: var(--accent-slate-color);
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .full-body {
